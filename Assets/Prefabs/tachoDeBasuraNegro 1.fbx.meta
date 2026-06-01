@@ -1,14 +1,15 @@
 fileFormatVersion: 2
-guid: 2f40f38ef50b1754d8b1bbd9a4365301
+guid: a57f2e6a4cdf834409d87033bf6e162d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: No Name
+    2100000: Negro
+    2100002: Relleno
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Tacho de basura
+    4300000: Tacho de basura Negro
   externalObjects: {}
   materials:
     importMaterials: 1

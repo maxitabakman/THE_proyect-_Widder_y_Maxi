@@ -15,11 +15,12 @@ public class objeto1 : MonoBehaviour
     {
         
     }
-    void OnCollisionEnter(Collision col){ 
+    void OnTriggerEnter (Collider other){ 
     
-        if(col.gameObject.CompareTag("objeto")){ 
+        if(other.gameObject.CompareTag("objeto")){ 
             contador++;
         Debug.Log("hubo colision con un pickable");
-        Destroy(col.gameObject);}}
+         Debug.Log(contador);
+        Destroy(other.gameObject);}}
 
 }
