@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class objeto1 : MonoBehaviour
 {
-    // Start is called before the first frame update
+   public int contador=0;
     void Start()
     {
         
@@ -18,6 +18,7 @@ public class objeto1 : MonoBehaviour
     void OnCollisionEnter(Collision col){ 
     
         if(col.gameObject.CompareTag("objeto")){ 
+            contador++;
         Debug.Log("hubo colision con un pickable");
         Destroy(col.gameObject);}}
 
