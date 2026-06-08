@@ -9,9 +9,9 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI txt_score;
     public TextMeshProUGUI txt_time;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        GameManagers = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
@@ -21,6 +21,6 @@ public class UIManager : MonoBehaviour
     }
     public void addpointandupdatedcoreUI(){
      score ++;
-      txt_score.text="puntaje: "+(score).ToString();
+      txt_score.text="Score: "+(score).ToString();
     }
 }
