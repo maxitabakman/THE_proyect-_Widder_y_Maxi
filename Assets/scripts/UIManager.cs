@@ -18,9 +18,14 @@ public class UIManager : MonoBehaviour
     void Update()
     {
      txt_time.text="tiempo: "+(GameManagers.timer).ToString();
+     txt_score.text="Score: "+(score).ToString();
     }
     public void addpointandupdatedcoreUI(){
      score ++;
-      txt_score.text="Score: "+(score).ToString();
+      if (score == 1){
+        score = 0;
+        GameManagers.interaccion_areas.sigue_en_juego_win = false;
+      
     }
-}
+
+}}
