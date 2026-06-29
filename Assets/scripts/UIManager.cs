@@ -22,7 +22,7 @@ public class UIManager : MonoBehaviour
     }
     public void addpointandupdatedcoreUI(){
      score ++;
-      if (score == 3){
+      if (score == 8){
         score = 0;
         GameManagers.interaccion_areas.sigue_en_juego_win = false;
       

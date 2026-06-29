@@ -36,7 +36,7 @@ public class interaccion_area : MonoBehaviour
         pantalla_lose.SetActive(false);
         if(other.gameObject.CompareTag("objeto")){ 
   
-       objeto[UIManagers.score].SetActive(false);
+       other.gameObject.SetActive(false);
              UIManagers.addpointandupdatedcoreUI();
     }}}
 
