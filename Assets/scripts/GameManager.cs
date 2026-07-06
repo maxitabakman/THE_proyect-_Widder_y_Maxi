@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public interaccion_area interaccion_areas;
     public UIManager UIManagers;
     public float timer=60;
+   
     
        void awake (){
      interaccion_areas= FindObjectOfType<interaccion_area>();
@@ -25,6 +26,7 @@ public class GameManager : MonoBehaviour
     }
     if (interaccion_areas.sigue_en_juego_lose == false || interaccion_areas.sigue_en_juego_win == false){
          Time.timeScale = 0;
+
     if (Input.GetKeyUp(KeyCode.R)) {
          Time.timeScale = 1;
       SceneManager.LoadScene(SceneManager.GetActiveScene().name); 

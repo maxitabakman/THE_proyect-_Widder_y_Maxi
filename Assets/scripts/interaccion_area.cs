@@ -11,6 +11,10 @@ public class interaccion_area : MonoBehaviour
     public bool sigue_en_juego_lose;
     public GameObject pantalla_lose;
     public GameObject[] objeto;
+    public AudioSource AudioSourcecolision; 
+    public AudioClip efectoSonido;  
+
+
     void Awake()
     {
         UIManagers= FindObjectOfType<UIManager>();
@@ -35,7 +39,7 @@ public class interaccion_area : MonoBehaviour
         if (sigue_en_juego_lose == true){
         pantalla_lose.SetActive(false);
         if(other.gameObject.CompareTag("objeto")){ 
-  
+                    AudioSourcecolision.PlayOneShot(efectoSonido);
        other.gameObject.SetActive(false);
              UIManagers.addpointandupdatedcoreUI();
     }}}
