@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     txt_time.text="tiempo: "+(GameManagers.timer).ToString();
+     txt_time.text="Time: "+(GameManagers.timer).ToString("F0");
      txt_score.text="Score: "+(score).ToString();
     }
     public void addpointandupdatedcoreUI(){
